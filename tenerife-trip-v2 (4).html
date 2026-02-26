@@ -1,0 +1,1899 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>טנריף ולה גומרה – מרץ–אפריל 2025</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ocean:    #1a6b8a;
+      --ocean-dk: #0d3d52;
+      --ocean-lt: #2a9ec0;
+      --sand:     #f5e6c8;
+      --lava:     #2c2c2c;
+      --sunset:   #e8834a;
+      --green:    #3a7d44;
+      --green-lt: #5aab67;
+      --cream:    #faf7f2;
+      --white:    #ffffff;
+      --phase1:   #1a6b8a;
+      --phase2:   #3a7d44;
+      --phase3:   #8b4513;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Heebo', sans-serif;
+      background: var(--cream);
+      color: var(--lava);
+      line-height: 1.7;
+      direction: rtl;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background:
+        linear-gradient(160deg, rgba(13,61,82,0.85) 0%, rgba(26,107,138,0.75) 40%, rgba(232,131,74,0.6) 100%),
+        url('https://images.unsplash.com/photo-1580674684081-7617fbf3d745?w=1600&q=80') center/cover no-repeat;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 120px;
+      background: linear-gradient(to top, var(--cream), transparent);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      padding: 2rem;
+      max-width: 780px;
+    }
+
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      color: #fff;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      padding: 0.35rem 1.1rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+      backdrop-filter: blur(8px);
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.6rem, 7vw, 5rem);
+      font-weight: 900;
+      color: #fff;
+      line-height: 1.1;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.35);
+      margin-bottom: 1rem;
+    }
+
+    .hero h1 span { color: #ffd580; }
+
+    .hero-subtitle {
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.88);
+      font-weight: 300;
+      margin-bottom: 2.5rem;
+    }
+
+    .hero-dates {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .hero-dates .pill {
+      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.35);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      padding: 0.5rem 1.3rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .scroll-hint {
+      position: absolute;
+      bottom: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.75rem;
+    }
+
+    .scroll-arrow {
+      width: 24px;
+      height: 24px;
+      border-left: 2px solid rgba(255,255,255,0.5);
+      border-bottom: 2px solid rgba(255,255,255,0.5);
+      transform: rotate(-45deg);
+      animation: bounce 1.6s infinite;
+    }
+
+    @keyframes bounce {
+      0%,100% { transform: translateY(0) rotate(-45deg); }
+      50%      { transform: translateY(6px) rotate(-45deg); }
+    }
+
+    /* ── OVERVIEW CARDS ── */
+    .overview {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 4rem 1.5rem 2rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .overview-card {
+      border-radius: 18px;
+      padding: 1.8rem;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .overview-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.18);
+    }
+
+    .overview-card.p1 { background: linear-gradient(135deg, #1a6b8a, #0d3d52); }
+    .overview-card.p2 { background: linear-gradient(135deg, #3a7d44, #1e4726); }
+    .overview-card.p3 { background: linear-gradient(135deg, #8b4513, #5a2d0c); }
+
+    .overview-card .phase-icon { font-size: 2.2rem; margin-bottom: 0.3rem; }
+    .overview-card .phase-num {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      opacity: 0.7;
+    }
+    .overview-card h3 { font-size: 1.3rem; font-weight: 700; }
+    .overview-card .phase-dates { font-size: 0.85rem; opacity: 0.8; font-weight: 400; }
+    .overview-card .phase-hotel {
+      margin-top: 0.5rem;
+      font-size: 0.88rem;
+      opacity: 0.75;
+      border-top: 1px solid rgba(255,255,255,0.2);
+      padding-top: 0.6rem;
+    }
+    .overview-card .phase-hotel strong { opacity: 1; display: block; font-weight: 600; }
+
+    /* ── SECTIONS ── */
+    .section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .phase-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid;
+    }
+
+    .phase-header.p1 { border-color: var(--phase1); }
+    .phase-header.p2 { border-color: var(--phase2); }
+    .phase-header.p3 { border-color: var(--phase3); }
+
+    .phase-icon-lg {
+      width: 52px; height: 52px;
+      border-radius: 14px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.6rem;
+      flex-shrink: 0;
+    }
+
+    .p1 .phase-icon-lg { background: var(--phase1); }
+    .p2 .phase-icon-lg { background: var(--phase2); }
+    .p3 .phase-icon-lg { background: var(--phase3); }
+
+    .phase-header-text h2 { font-size: 1.6rem; font-weight: 800; }
+    .phase-header-text .sub {
+      font-size: 0.85rem;
+      color: #666;
+      font-weight: 400;
+    }
+
+    /* ── DAYS ── */
+    .day {
+      position: relative;
+      margin-bottom: 2rem;
+    }
+
+    .day-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      overflow: hidden;
+      transition: box-shadow 0.25s;
+    }
+
+    .day-card:hover {
+      box-shadow: 0 6px 28px rgba(0,0,0,0.12);
+    }
+
+    .day-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1.1rem 1.4rem;
+      border-bottom: 1px solid #f0ece6;
+    }
+
+    .day-num {
+      width: 46px; height: 46px;
+      border-radius: 12px;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      color: #fff;
+      font-weight: 700;
+      flex-shrink: 0;
+      line-height: 1;
+    }
+
+    .day-num .n { font-size: 1.25rem; }
+    .day-num .m { font-size: 0.65rem; opacity: 0.85; }
+
+    .p1 .day-num { background: var(--phase1); }
+    .p2 .day-num { background: var(--phase2); }
+    .p3 .day-num { background: var(--phase3); }
+
+    .day-header h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      flex: 1;
+    }
+
+    .day-header .day-tag {
+      font-size: 0.75rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      font-weight: 500;
+      color: #fff;
+    }
+
+    .p1 .day-tag { background: var(--phase1); }
+    .p2 .day-tag { background: var(--phase2); }
+    .p3 .day-tag { background: var(--phase3); }
+
+    .day-body { padding: 1.2rem 1.4rem; }
+
+    /* ── EVENTS ── */
+    .events { display: flex; flex-direction: column; gap: 0.75rem; }
+
+    .event {
+      display: flex;
+      gap: 0.9rem;
+      align-items: flex-start;
+    }
+
+    .event-time {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #999;
+      min-width: 42px;
+      padding-top: 0.1rem;
+      white-space: nowrap;
+    }
+
+    .event-dot {
+      width: 10px; height: 10px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-top: 0.4rem;
+    }
+
+    .p1 .event-dot { background: var(--phase1); }
+    .p2 .event-dot { background: var(--phase2); }
+    .p3 .event-dot { background: var(--phase3); }
+
+    .event-content { flex: 1; }
+
+    .event-content p {
+      font-size: 0.95rem;
+      color: #333;
+      line-height: 1.55;
+    }
+
+    .event-content p strong { color: var(--lava); font-weight: 700; }
+
+    .event-highlight {
+      margin-top: 0.35rem;
+      background: #f8f5ef;
+      border-radius: 8px;
+      padding: 0.5rem 0.8rem;
+      font-size: 0.85rem;
+      color: #555;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.4rem;
+    }
+
+    .event-highlight .icon { flex-shrink: 0; }
+
+    /* ── TIP BOX ── */
+    .tip {
+      background: #fff8ed;
+      border: 1px solid #ffd580;
+      border-radius: 10px;
+      padding: 0.8rem 1rem;
+      margin-top: 1rem;
+      font-size: 0.88rem;
+      color: #7a5500;
+      display: flex;
+      gap: 0.6rem;
+      align-items: flex-start;
+    }
+
+    /* ── ACCOMMODATION BANNER ── */
+    .hotel-banner {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      background: var(--sand);
+      border-radius: 12px;
+      padding: 0.9rem 1.2rem;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      color: var(--lava);
+    }
+
+    .hotel-banner .hotel-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+    }
+
+    .hotel-banner strong { font-weight: 700; display: block; }
+
+    /* ── SEPARATOR ── */
+    .wave-sep {
+      text-align: center;
+      margin: 3rem 0 1rem;
+      opacity: 0.15;
+      font-size: 2rem;
+      letter-spacing: 0.4em;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      margin-top: 5rem;
+      background: var(--ocean-dk);
+      color: rgba(255,255,255,0.65);
+      text-align: center;
+      padding: 2.5rem 1rem;
+      font-size: 0.85rem;
+    }
+
+    footer strong { color: #fff; }
+
+    /* ── FLIGHT STRIP ── */
+    .flight-strip {
+      max-width: 900px;
+      margin: 0 auto 1rem;
+      padding: 0 1.5rem;
+    }
+
+    .flight-card {
+      background: linear-gradient(135deg, var(--ocean-dk) 0%, var(--ocean) 100%);
+      border-radius: 16px;
+      padding: 1.3rem 1.6rem;
+      color: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+    }
+
+    .flight-leg {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .flight-leg .airport {
+      text-align: center;
+    }
+
+    .flight-leg .airport .code {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+    }
+
+    .flight-leg .airport .city {
+      font-size: 0.72rem;
+      opacity: 0.7;
+    }
+
+    .flight-leg .route {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.2rem;
+    }
+
+    .flight-leg .route .line {
+      width: 100%;
+      height: 1px;
+      background: rgba(255,255,255,0.35);
+      position: relative;
+    }
+
+    .flight-leg .route .plane { font-size: 1rem; }
+
+    .flight-leg .route .time {
+      font-size: 0.75rem;
+      opacity: 0.7;
+    }
+
+    .flight-info {
+      text-align: center;
+      border-right: 1px solid rgba(255,255,255,0.2);
+      padding-right: 1.5rem;
+    }
+
+    .flight-info .label { font-size: 0.72rem; opacity: 0.7; }
+    .flight-info .val { font-size: 1rem; font-weight: 700; }
+
+    /* ── PHASE BANNERS ── */
+    .phase-banner {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      overflow: hidden;
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .phase-banner::after {
+      content: '';
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 160px;
+      background: linear-gradient(to top, var(--cream), transparent);
+      z-index: 1;
+    }
+
+    .phase-banner-content {
+      position: relative;
+      z-index: 2;
+      color: #fff;
+      max-width: 720px;
+      padding: 2.5rem 2rem;
+    }
+
+    .phase-banner-label {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      border: 1px solid rgba(255,255,255,0.4);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      padding: 0.4rem 1.2rem;
+      border-radius: 999px;
+      margin-bottom: 1.6rem;
+    }
+
+    .phase-banner h2 {
+      font-size: clamp(2.2rem, 5.5vw, 4rem);
+      font-weight: 900;
+      line-height: 1.1;
+      text-shadow: 0 3px 24px rgba(0,0,0,0.45);
+      margin-bottom: 0.9rem;
+    }
+
+    .phase-banner .banner-tagline {
+      font-size: 1.05rem;
+      font-weight: 300;
+      opacity: 0.88;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .phase-banner .banner-dates {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.3);
+      backdrop-filter: blur(10px);
+      padding: 0.5rem 1.4rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    /* Phase-specific backgrounds */
+    .p1-banner {
+      background-image:
+        linear-gradient(160deg, rgba(10,50,15,0.75) 0%, rgba(25,80,35,0.6) 50%, rgba(40,110,50,0.45) 100%),
+        url('https://images.unsplash.com/photo-1448375240586-882707db888b?w=1920&q=80');
+    }
+
+    .p2-banner {
+      background-image:
+        linear-gradient(160deg, rgba(8,40,58,0.78) 0%, rgba(13,61,82,0.65) 50%, rgba(26,107,138,0.45) 100%),
+        url('https://images.unsplash.com/photo-1539635278303-d4002c07eae3?w=1920&q=80');
+    }
+
+    .p3-banner {
+      background-image:
+        linear-gradient(160deg, rgba(80,25,0,0.75) 0%, rgba(140,55,10,0.62) 50%, rgba(210,100,30,0.42) 100%),
+        url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&q=80');
+    }
+
+    /* ── COUNTDOWN ── */
+    .countdown-section {
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem;
+    }
+
+    .countdown-card {
+      background: linear-gradient(135deg, #0d3d52 0%, #1a6b8a 50%, #e8834a 100%);
+      border-radius: 24px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      color: #fff;
+      box-shadow: 0 12px 40px rgba(13,61,82,0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .countdown-card::before {
+      content: '✈️';
+      position: absolute;
+      font-size: 8rem;
+      opacity: 0.06;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .countdown-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      opacity: 0.75;
+      margin-bottom: 0.5rem;
+    }
+
+    .countdown-title {
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-bottom: 2rem;
+    }
+
+    .countdown-title span { color: #ffd580; }
+
+    .countdown-grid {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+      direction: ltr;
+    }
+
+    .countdown-unit {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    .countdown-num {
+      background: rgba(255,255,255,0.15);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 16px;
+      width: 90px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.6rem;
+      font-weight: 900;
+      line-height: 1;
+      transition: transform 0.2s;
+    }
+
+    .countdown-num.pulse {
+      transform: scale(1.08);
+    }
+
+    .countdown-unit-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      opacity: 0.7;
+      text-transform: uppercase;
+    }
+
+    .countdown-footer {
+      font-size: 0.9rem;
+      opacity: 0.7;
+    }
+
+    .countdown-done {
+      font-size: 1.6rem;
+      font-weight: 800;
+    }
+
+    @media (max-width: 600px) {
+      .countdown-num { width: 70px; height: 70px; font-size: 2rem; }
+      .countdown-grid { gap: 0.8rem; }
+    }
+
+    /* ── ROUTE MAP ── */
+    .map-section {
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem;
+    }
+
+    .map-title {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--ocean-dk);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+    }
+
+    .map-container {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 40px rgba(0,0,0,0.15);
+      position: relative;
+      background: #e8f4f8;
+    }
+
+    #route-map {
+      width: 100%;
+      height: 500px;
+    }
+
+    .map-legend {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    .map-legend-item {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 500;
+    }
+
+    .legend-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+
+    /* ── WEATHER WIDGET ── */
+    .weather-section {
+      max-width: 1100px;
+      margin: 0 auto 3rem;
+      padding: 0 1.5rem;
+    }
+
+    .weather-title {
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--ocean-dk);
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+    }
+
+    .weather-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .weather-card {
+      background: linear-gradient(135deg, #1a6b8a, #0d3d52);
+      border-radius: 20px;
+      padding: 1.8rem;
+      color: #fff;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+      transition: transform 0.25s, box-shadow 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .weather-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 40px rgba(0,0,0,0.22);
+    }
+
+    .weather-card::before {
+      content: '';
+      position: absolute;
+      top: -30px; right: -30px;
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.05);
+    }
+
+    .weather-card.gomera {
+      background: linear-gradient(135deg, #3a7d44, #1e4726);
+    }
+
+    .weather-location {
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      opacity: 0.7;
+      margin-bottom: 0.3rem;
+    }
+
+    .weather-city {
+      font-size: 1.4rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .weather-main {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .weather-icon-big {
+      font-size: 3.5rem;
+      line-height: 1;
+    }
+
+    .weather-temp {
+      font-size: 3rem;
+      font-weight: 900;
+      line-height: 1;
+    }
+
+    .weather-temp span {
+      font-size: 1.4rem;
+      font-weight: 400;
+      opacity: 0.7;
+    }
+
+    .weather-desc {
+      font-size: 1rem;
+      opacity: 0.85;
+      margin-bottom: 1.2rem;
+    }
+
+    .weather-details {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 1rem;
+    }
+
+    .weather-detail {
+      display: flex;
+      flex-direction: column;
+      gap: 0.15rem;
+    }
+
+    .weather-detail .detail-label {
+      font-size: 0.72rem;
+      opacity: 0.6;
+      font-weight: 500;
+    }
+
+    .weather-detail .detail-val {
+      font-size: 0.92rem;
+      font-weight: 700;
+    }
+
+    .weather-updated {
+      text-align: center;
+      font-size: 0.75rem;
+      color: #999;
+      margin-top: 1rem;
+    }
+
+    .weather-loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 2rem;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    .weather-error {
+      background: rgba(255,255,255,0.1);
+      border-radius: 10px;
+      padding: 1rem;
+      text-align: center;
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+
+    /* ── NAV BUTTONS ── */
+    .nav-buttons {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.15s, box-shadow 0.15s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .nav-btn:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+    }
+
+    .nav-btn.waze {
+      background: #05c8f7;
+      color: #fff;
+    }
+
+    .nav-btn.gmap {
+      background: #4285f4;
+      color: #fff;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .hero h1 { font-size: 2.2rem; }
+      .day-header { flex-wrap: wrap; }
+      .day-header h3 { font-size: 0.95rem; }
+      .event { gap: 0.5rem; }
+      .event-time { min-width: 36px; font-size: 0.72rem; }
+      .phase-banner { background-attachment: scroll; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ──────────── HERO ──────────── -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">✈ מסע אירופי | מרץ–אפריל 2025</div>
+    <h1>טנריף<br/><span>ולה גומרה</span></h1>
+    <p class="hero-subtitle">10 ימים · 3 שלבים · אי אחד + אי שכן · שקט, ירוק ויוקרה</p>
+    <div class="hero-dates">
+      <div class="pill">🌿 לה גומרה 30.3–3.4</div>
+      <div class="pill">🏙️ צפון טנריף 3–5.4</div>
+      <div class="pill">🥂 בואנביסטה 5–8.4</div>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- ──────────── OVERVIEW CARDS ──────────── -->
+<div class="overview">
+  <div class="overview-card p1">
+    <div class="phase-icon">🌿</div>
+    <div class="phase-num">שלב 1</div>
+    <h3>לה גומרה – השקט והפרא</h3>
+    <div class="phase-dates">30 במרץ – 3 באפריל</div>
+    <div class="phase-hotel">
+      <span>לינה</span>
+      <strong>Suites Los Telares, Hermigua</strong>
+    </div>
+  </div>
+  <div class="overview-card p2">
+    <div class="phase-icon">🌴</div>
+    <div class="phase-num">שלב 2</div>
+    <h3>צפון טנריף – אווירה מקומית ואקשן</h3>
+    <div class="phase-dates">3 – 5 באפריל</div>
+    <div class="phase-hotel">
+      <span>לינה</span>
+      <strong>AluaSoul Orotava Valley, Puerto de la Cruz</strong>
+    </div>
+  </div>
+  <div class="overview-card p3">
+    <div class="phase-icon">🥂</div>
+    <div class="phase-num">שלב 3</div>
+    <h3>הפינאלה – יוקרה וניתוק</h3>
+    <div class="phase-dates">5 – 8 באפריל</div>
+    <div class="phase-hotel">
+      <span>לינה</span>
+      <strong>Hacienda del Conde Meliá Collection, Buenavista</strong>
+    </div>
+  </div>
+</div>
+
+<!-- Leaflet Map CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css" />
+<!-- Leaflet Map JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+
+<!-- ──────────── COUNTDOWN TIMER ──────────── -->
+<div class="countdown-section">
+  <div class="countdown-card">
+    <div class="countdown-label">✈ הטיול מתחיל בעוד</div>
+    <div class="countdown-title">טנריף <span>&</span> לה גומרה – 30 במרץ 2026</div>
+    <div class="countdown-grid" id="countdown-grid">
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-days">--</div>
+        <div class="countdown-unit-label">ימים</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-hours">--</div>
+        <div class="countdown-unit-label">שעות</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-minutes">--</div>
+        <div class="countdown-unit-label">דקות</div>
+      </div>
+      <div class="countdown-unit">
+        <div class="countdown-num" id="cd-seconds">--</div>
+        <div class="countdown-unit-label">שניות</div>
+      </div>
+    </div>
+    <div class="countdown-footer" id="countdown-footer">🌋 טנריף מחכה לך!</div>
+  </div>
+</div>
+
+<script>
+  const tripDate = new Date('2026-03-30T14:20:00');
+
+  function updateCountdown() {
+    const now = new Date();
+    const diff = tripDate - now;
+
+    if (diff <= 0) {
+      // Trip has started or passed
+      const returnDate = new Date('2026-04-08T09:15:00');
+      if (now < returnDate) {
+        document.getElementById('countdown-grid').innerHTML = '<div class="countdown-done">🌴 הטיול בעיצומו! תהנה!</div>';
+        document.getElementById('countdown-footer').textContent = '☀️ חוויות בלתי נשכחות בדרך!';
+      } else {
+        document.getElementById('countdown-grid').innerHTML = '<div class="countdown-done">🥂 הטיול הסתיים – זכרונות לכל החיים!</div>';
+        document.getElementById('countdown-footer').textContent = '✈️ עד הטיול הבא!';
+      }
+      return;
+    }
+
+    const days    = Math.floor(diff / (1000 * 60 * 60 * 24));
+    const hours   = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+    const secEl = document.getElementById('cd-seconds');
+    const prev = secEl.textContent;
+    const newVal = String(seconds).padStart(2, '0');
+
+    document.getElementById('cd-days').textContent    = String(days).padStart(2, '0');
+    document.getElementById('cd-hours').textContent   = String(hours).padStart(2, '0');
+    document.getElementById('cd-minutes').textContent = String(minutes).padStart(2, '0');
+    secEl.textContent = newVal;
+
+    if (prev !== newVal) {
+      secEl.classList.add('pulse');
+      setTimeout(() => secEl.classList.remove('pulse'), 200);
+    }
+  }
+
+  updateCountdown();
+  setInterval(updateCountdown, 1000);
+</script>
+
+<!-- ──────────── ROUTE MAP ──────────── -->
+<div class="map-section">
+  <div class="map-title">🗺️ מסלול הטיול המלא</div>
+  <div class="map-container">
+    <div id="route-map"></div>
+  </div>
+  <div class="map-legend">
+    <div class="map-legend-item"><div class="legend-dot" style="background:#1a6b8a"></div> שלב 1 – לה גומרה</div>
+    <div class="map-legend-item"><div class="legend-dot" style="background:#3a7d44"></div> שלב 2 – צפון טנריף</div>
+    <div class="map-legend-item"><div class="legend-dot" style="background:#8b4513"></div> שלב 3 – הפינאלה</div>
+    <div class="map-legend-item"><div class="legend-dot" style="background:#e8834a"></div> נחיתה / המראה</div>
+  </div>
+</div>
+
+<script>
+  // Initialize map centered on Canary Islands area
+  const map = L.map('route-map', {
+    center: [28.15, -16.8],
+    zoom: 9,
+    zoomControl: true,
+    scrollWheelZoom: false
+  });
+
+  // Beautiful map tiles
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors',
+    maxZoom: 18,
+  }).addTo(map);
+
+  // Custom marker function
+  function makeIcon(color, emoji) {
+    return L.divIcon({
+      className: '',
+      html: `<div style="
+        background: ${color};
+        width: 36px; height: 36px;
+        border-radius: 50% 50% 50% 0;
+        transform: rotate(-45deg);
+        border: 3px solid white;
+        box-shadow: 0 3px 12px rgba(0,0,0,0.3);
+        display: flex; align-items: center; justify-content: center;
+      "><span style="transform: rotate(45deg); font-size: 16px; display:block; text-align:center; line-height:28px;">${emoji}</span></div>`,
+      iconSize: [36, 36],
+      iconAnchor: [18, 36],
+      popupAnchor: [0, -36]
+    });
+  }
+
+  // All locations with coordinates
+  const locations = [
+    // Phase 1 - La Gomera (blue)
+    { lat: 28.0916, lng: -17.1097, name: 'נחיתה בטנריף דרום (TFS)', phase: 0, color: '#e8834a', emoji: '✈️', desc: '30 במרץ – הגעה ואיסוף רכב' },
+    { lat: 28.0830, lng: -17.1121, name: 'נמל לוס כריסטיאנוס', phase: 0, color: '#e8834a', emoji: '⛴️', desc: 'מעבורת ל-לה גומרה' },
+    { lat: 28.0920, lng: -17.1079, name: 'סן סבסטיאן, לה גומרה', phase: 1, color: '#1a6b8a', emoji: '🌿', desc: 'נמל ראשי של לה גומרה' },
+    { lat: 28.1651, lng: -17.1927, name: 'Hermigua – Suites Los Telares', phase: 1, color: '#1a6b8a', emoji: '🏡', desc: 'שלב 1 – לינה 4 לילות' },
+    { lat: 28.1094, lng: -17.2422, name: 'Valle Gran Rey', phase: 1, color: '#1a6b8a', emoji: '🏖️', desc: 'החוף הצפוני של לה גומרה' },
+    { lat: 28.1209, lng: -17.1760, name: 'Parque Nacional Garajonay', phase: 1, color: '#1a6b8a', emoji: '🌲', desc: 'יער הלורל – מורשת אונסק"ו' },
+    { lat: 28.0706, lng: -17.2241, name: 'Playa de Santiago', phase: 1, color: '#1a6b8a', emoji: '🌊', desc: 'הנגישה הדרומי' },
+
+    // Phase 2 - North Tenerife (green)
+    { lat: 28.4163, lng: -16.5435, name: 'Puerto de la Cruz – AluaSoul', phase: 2, color: '#3a7d44', emoji: '🌴', desc: 'שלב 2 – לינה 2 לילות' },
+    { lat: 28.2723, lng: -16.6424, name: 'Teide National Park', phase: 2, color: '#3a7d44', emoji: '🌋', desc: 'הר הגעש הגבוה בספרד' },
+    { lat: 28.5275, lng: -16.3190, name: 'Anaga Rural Park', phase: 2, color: '#3a7d44', emoji: '🏔️', desc: 'פארק אנאגה – מורשת ביוספרה' },
+    { lat: 28.4874, lng: -16.3159, name: 'La Laguna', phase: 2, color: '#3a7d44', emoji: '🏛️', desc: 'עיר עתיקה – מורשת עולמי' },
+
+    // Phase 3 - Final luxury (brown)
+    { lat: 28.3720, lng: -16.8642, name: 'Garachico – El Caletón', phase: 3, color: '#8b4513', emoji: '🌊', desc: 'בריכות לבה טבעיות' },
+    { lat: 28.3699, lng: -16.7739, name: 'Hacienda del Conde – Meliá', phase: 3, color: '#8b4513', emoji: '🏰', desc: 'שלב 3 – לינה 3 לילות' },
+    { lat: 28.3453, lng: -16.9142, name: 'Buenavista Golf', phase: 3, color: '#8b4513', emoji: '⛳', desc: 'מגרש גולף עם נוף לאוקיינוס' },
+    { lat: 28.3460, lng: -16.9227, name: 'Punta de Teno', phase: 3, color: '#8b4513', emoji: '🏔️', desc: 'קצה המערבי של טנריף – שקיעה אחרונה' },
+    { lat: 28.4827, lng: -16.3415, name: 'שדה תעופה צפוני TFN', phase: 0, color: '#e8834a', emoji: '✈️', desc: '8 באפריל – המראה הביתה' },
+  ];
+
+  // Add markers
+  locations.forEach(loc => {
+    const marker = L.marker([loc.lat, loc.lng], { icon: makeIcon(loc.color, loc.emoji) })
+      .addTo(map)
+      .bindPopup(`
+        <div style="font-family: 'Heebo', sans-serif; direction: rtl; min-width: 180px; padding: 4px;">
+          <div style="font-weight: 800; font-size: 1rem; color: ${loc.color}; margin-bottom: 4px;">${loc.emoji} ${loc.name}</div>
+          <div style="font-size: 0.85rem; color: #555;">${loc.desc}</div>
+        </div>
+      `, { maxWidth: 250 });
+  });
+
+
+</script>
+
+<!-- ──────────── WEATHER WIDGET ──────────── -->
+<div class="weather-section">
+  <div class="weather-title">🌤️ מזג האוויר בזמן אמת</div>
+  <div class="weather-grid">
+    <!-- Tenerife -->
+    <div class="weather-card" id="weather-tenerife">
+      <div class="weather-location">איי קנריים</div>
+      <div class="weather-city">🌋 טנריף</div>
+      <div class="weather-loading" id="loading-tenerife">⏳ טוען נתונים...</div>
+      <div id="data-tenerife" style="display:none">
+        <div class="weather-main">
+          <div class="weather-icon-big" id="icon-tenerife"></div>
+          <div>
+            <div class="weather-temp"><span id="temp-tenerife"></span><span>°C</span></div>
+            <div class="weather-desc" id="desc-tenerife"></div>
+          </div>
+        </div>
+        <div class="weather-details">
+          <div class="weather-detail">
+            <div class="detail-label">מרגיש כמו</div>
+            <div class="detail-val" id="feels-tenerife"></div>
+          </div>
+          <div class="weather-detail">
+            <div class="detail-label">לחות</div>
+            <div class="detail-val" id="humidity-tenerife"></div>
+          </div>
+          <div class="weather-detail">
+            <div class="detail-label">רוח</div>
+            <div class="detail-val" id="wind-tenerife"></div>
+          </div>
+          <div class="weather-detail">
+            <div class="detail-label">ענן</div>
+            <div class="detail-val" id="cloud-tenerife"></div>
+          </div>
+        </div>
+      </div>
+      <div id="error-tenerife" style="display:none" class="weather-error">⚠️ לא ניתן לטעון נתונים</div>
+    </div>
+
+    <!-- La Gomera -->
+    <div class="weather-card gomera" id="weather-gomera">
+      <div class="weather-location">איי קנריים</div>
+      <div class="weather-city">🌿 לה גומרה</div>
+      <div class="weather-loading" id="loading-gomera">⏳ טוען נתונים...</div>
+      <div id="data-gomera" style="display:none">
+        <div class="weather-main">
+          <div class="weather-icon-big" id="icon-gomera"></div>
+          <div>
+            <div class="weather-temp"><span id="temp-gomera"></span><span>°C</span></div>
+            <div class="weather-desc" id="desc-gomera"></div>
+          </div>
+        </div>
+        <div class="weather-details">
+          <div class="weather-detail">
+            <div class="detail-label">מרגיש כמו</div>
+            <div class="detail-val" id="feels-gomera"></div>
+          </div>
+          <div class="weather-detail">
+            <div class="detail-label">לחות</div>
+            <div class="detail-val" id="humidity-gomera"></div>
+          </div>
+          <div class="weather-detail">
+            <div class="detail-label">רוח</div>
+            <div class="detail-val" id="wind-gomera"></div>
+          </div>
+          <div class="weather-detail">
+            <div class="detail-label">ענן</div>
+            <div class="detail-val" id="cloud-gomera"></div>
+          </div>
+        </div>
+      </div>
+      <div id="error-gomera" style="display:none" class="weather-error">⚠️ לא ניתן לטעון נתונים</div>
+    </div>
+  </div>
+  <div class="weather-updated" id="weather-updated"></div>
+</div>
+
+<script>
+  const weatherDescHebrew = {
+    'clear sky': 'שמיים בהירים ☀️',
+    'few clouds': 'מעט עננים 🌤️',
+    'scattered clouds': 'עננים מפוזרים ⛅',
+    'broken clouds': 'עננים חלקיים 🌥️',
+    'overcast clouds': 'מעונן ☁️',
+    'light rain': 'גשם קל 🌦️',
+    'moderate rain': 'גשם בינוני 🌧️',
+    'heavy intensity rain': 'גשם כבד 🌧️',
+    'thunderstorm': 'סופת ברקים ⛈️',
+    'mist': 'ערפל 🌫️',
+    'fog': 'ערפל כבד 🌫️',
+    'drizzle': 'טפטוף 🌦️',
+    'snow': 'שלג ❄️',
+    'light intensity drizzle': 'טפטוף קל 🌦️',
+  };
+
+  const weatherIcons = {
+    '01d': '☀️', '01n': '🌙',
+    '02d': '🌤️', '02n': '🌤️',
+    '03d': '⛅', '03n': '⛅',
+    '04d': '☁️', '04n': '☁️',
+    '09d': '🌦️', '09n': '🌦️',
+    '10d': '🌧️', '10n': '🌧️',
+    '11d': '⛈️', '11n': '⛈️',
+    '13d': '❄️', '13n': '❄️',
+    '50d': '🌫️', '50n': '🌫️',
+  };
+
+  async function fetchWeather(city, suffix) {
+    const apiKey = 'bd5e378503939ddaee76f12ad7a97608'; // demo key - open-meteo fallback
+    try {
+      // Using Open-Meteo (free, no key needed) with geocoding
+      const geoRes = await fetch(`https://geocoding-api.open-meteo.com/v1/search?name=${encodeURIComponent(city)}&count=1&language=he`);
+      const geoData = await geoRes.json();
+      if (!geoData.results || !geoData.results.length) throw new Error('Not found');
+      
+      const { latitude, longitude } = geoData.results[0];
+      const weatherRes = await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${latitude}&longitude=${longitude}&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,cloud_cover,wind_speed_10m&wind_speed_unit=kmh`);
+      const weatherData = await weatherRes.json();
+      const c = weatherData.current;
+
+      // WMO weather codes to Hebrew
+      const wmoToHebrew = {
+        0: ['שמיים בהירים', '☀️'],
+        1: ['בעיקר בהיר', '🌤️'], 2: ['חלקית מעונן', '⛅'], 3: ['מעונן', '☁️'],
+        45: ['ערפל', '🌫️'], 48: ['ערפל קפוא', '🌫️'],
+        51: ['טפטוף קל', '🌦️'], 53: ['טפטוף בינוני', '🌦️'], 55: ['טפטוף כבד', '🌦️'],
+        61: ['גשם קל', '🌦️'], 63: ['גשם בינוני', '🌧️'], 65: ['גשם כבד', '🌧️'],
+        71: ['שלג קל', '❄️'], 73: ['שלג בינוני', '❄️'], 75: ['שלג כבד', '❄️'],
+        80: ['ממטרים קלים', '🌦️'], 81: ['ממטרים', '🌧️'], 82: ['ממטרים כבדים', '🌧️'],
+        95: ['סופת ברקים', '⛈️'], 96: ['סופת ברקים עם ברד', '⛈️'], 99: ['סופת ברקים חזקה', '⛈️'],
+      };
+
+      const [desc, icon] = wmoToHebrew[c.weather_code] || ['מזג אוויר לא ידוע', '🌡️'];
+
+      document.getElementById(`loading-${suffix}`).style.display = 'none';
+      document.getElementById(`data-${suffix}`).style.display = 'block';
+      document.getElementById(`icon-${suffix}`).textContent = icon;
+      document.getElementById(`temp-${suffix}`).textContent = Math.round(c.temperature_2m);
+      document.getElementById(`desc-${suffix}`).textContent = desc;
+      document.getElementById(`feels-${suffix}`).textContent = Math.round(c.apparent_temperature) + '°C';
+      document.getElementById(`humidity-${suffix}`).textContent = c.relative_humidity_2m + '%';
+      document.getElementById(`wind-${suffix}`).textContent = Math.round(c.wind_speed_10m) + ' קמ"ש';
+      document.getElementById(`cloud-${suffix}`).textContent = c.cloud_cover + '%';
+
+    } catch (e) {
+      document.getElementById(`loading-${suffix}`).style.display = 'none';
+      document.getElementById(`error-${suffix}`).style.display = 'block';
+    }
+  }
+
+  // Fetch weather for both locations
+  fetchWeather('Santa Cruz de Tenerife', 'tenerife');
+  fetchWeather('San Sebastián de la Gomera', 'gomera');
+
+  // Show last updated time
+  const now = new Date();
+  document.getElementById('weather-updated').textContent = 
+    'עודכן: ' + now.toLocaleTimeString('he-IL', {hour: '2-digit', minute: '2-digit'});
+</script>
+
+<!-- ──────────── PHASE 1 ──────────── -->
+<section class="section">
+
+  <div class="phase-header p1">
+    <div class="phase-icon-lg">🌿</div>
+    <div class="phase-header-text">
+      <h2>שלב 1 – לה גומרה: השקט והפרא</h2>
+      <div class="sub">30 במרץ – 3 באפריל | 4 לילות</div>
+    </div>
+  </div>
+
+  <div class="hotel-banner">
+    <div class="hotel-icon">🏡</div>
+    <div>
+      <strong>Suites Los Telares</strong>
+      Hermigua, לה גומרה
+    </div>
+  </div>
+
+  <!-- Day 1 -->
+  <div class="day p1">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">30</div>
+          <div class="m">מרץ</div>
+        </div>
+        <h3>הנחיתה והמעבר</h3>
+        <div class="day-tag">יום ב׳</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">14:20</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>נחיתה ב<strong>טנריף דרום (TFS)</strong> ואיסוף הסיאט איביזה מהאשכרה.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Tenerife+Sur+Airport+TFS" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Tenerife+Sur+Airport" target="_blank">📍 Google Maps</a>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">18:30</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>מעבורת <strong>Naviera Armas</strong> מלוס כריסטיאנוס לסן סבסטיאן, לה גומרה.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Los+Cristianos+Ferry+Port+Tenerife" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Los+Cristianos+Ferry+Port" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">⛴️</span>
+                <span>מומלץ להזמין כרטיסי מעבורת מראש. המסע אורך כ-50 דקות.</span>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">ערב</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>נסיעה ל<strong>Hermigua</strong> ו-Check-in ב-Suites Los Telares.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Suites+Los+Telares+Hermigua+La+Gomera" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Suites+Los+Telares+Hermigua" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">🍽️</span>
+                <span>ארוחת ערב מקומית ב-<strong>Tasca Telémaco</strong> – אוכל קנרי אותנטי.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 2 -->
+  <div class="day p1">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">31</div>
+          <div class="m">מרץ</div>
+        </div>
+        <h3>לב היער והכפרים</h3>
+        <div class="day-tag">יום ג׳</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">בוקר</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>ביקור ב<strong>פארק הלאומי Garajonay</strong> – יערות ערפל פרהיסטוריים, מורשת אונסק"ו ייחודית.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Garajonay+National+Park+La+Gomera" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Garajonay+National+Park" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">🌫️</span>
+                <span>הפארק מכסה כ-10% מהאי וכולל שבילי הליכה מרהיבים בין עצי דפנה ופרנה עתיקים.</span>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">אחה"צ</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>ביקור בכפר הציורי <strong>Agulo</strong> – אחד היפים בלה גומרה.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Agulo+La+Gomera" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Agulo,La+Gomera" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">👁️</span>
+                <span>תצפית הזכוכית <strong>Abrante</strong> – נוף פנורמי מרהיב על הכפר, האי ועל טנריף ברקע.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 3 -->
+  <div class="day p1">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">1</div>
+          <div class="m">אפריל</div>
+        </div>
+        <h3>הצד המערבי והחופים</h3>
+        <div class="day-tag">יום ד׳</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">בוקר</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>נסיעה לעמק <strong>Valle Gran Rey</strong> – ירידה דרמטית לעמק הדקלים.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Valle+Gran+Rey+La+Gomera" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Valle+Gran+Rey,La+Gomera" target="_blank">📍 Google Maps</a>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">יום</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>יום של חופים עם <strong>חול שחור וולקני</strong>, שוטטות בנמל הקטן ובכפרים.</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">שקיעה</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>צפייה ב<strong>שקיעת השמש המפורסמת של Valle Gran Rey</strong> – ממכרת.</p>
+              <div class="event-highlight">
+                <span class="icon">🌅</span>
+                <span>אחת השקיעות הכי מצולמות בכל האיים הקנריים. כדאי להגיע מוקדם למצוא מקום טוב.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 4 -->
+  <div class="day p1">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">2</div>
+          <div class="m">אפריל</div>
+        </div>
+        <h3>דרום האי וסן סבסטיאן</h3>
+        <div class="day-tag">יום ה׳</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">בוקר</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>נסיעה ל<strong>Playa de Santiago</strong> הרגועה – חוף שקט בדרום האי.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Playa+de+Santiago+La+Gomera" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Playa+de+Santiago,La+Gomera" target="_blank">📍 Google Maps</a>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">אחה"צ</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>ביקור בבירה <strong>San Sebastián de la Gomera</strong>:</p>
+              <div class="event-highlight">
+                <span class="icon">🏛️</span>
+                <span>מגדל קולומבוס (Torre del Conde) – שם עגן קולומבוס לפני מסעו לאמריקה.</span>
+              </div>
+              <div class="event-highlight" style="margin-top:0.4rem;">
+                <span class="icon">🛍️</span>
+                <span>קניית מוצרים מקומיים: <strong>דבש תמרים (Miel de Palma)</strong> וגבינת <strong>Almogrote</strong> – מוצר הדגל של לה גומרה.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="wave-sep">〰〰〰〰〰</div>
+
+<!-- ──────────── PHASE 2 ──────────── -->
+<section class="section">
+
+  <div class="phase-header p2">
+    <div class="phase-icon-lg">🌴</div>
+    <div class="phase-header-text">
+      <h2>שלב 2 – צפון טנריף: אווירה מקומית ואקשן</h2>
+      <div class="sub">3 – 5 באפריל | 2 לילות</div>
+    </div>
+  </div>
+
+  <div class="hotel-banner">
+    <div class="hotel-icon">🏨</div>
+    <div>
+      <strong>AluaSoul Orotava Valley</strong>
+      Puerto de la Cruz, צפון טנריף
+    </div>
+  </div>
+
+  <!-- Day 5 -->
+  <div class="day p2">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">3</div>
+          <div class="m">אפריל</div>
+        </div>
+        <h3>המעבר לטנריף + Viernes Santo</h3>
+        <div class="day-tag">יום ו׳</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">12:00</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>מעבורת חזרה מסן סבסטיאן ללוס כריסטיאנוס, טנריף.</p>
+              <div class="event-highlight">
+                <span class="icon">⚠️</span>
+                <span><strong>יום חג (Jueves Santo)!</strong> מומלץ מאוד להזמין כרטיסי מעבורת הרבה מראש – ביקוש גבוה.</span>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">אחה"צ</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>נסיעה צפונה וצ'ק-אין ב<strong>AluaSoul Orotava Valley</strong>.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=AluaSoul+Orotava+Valley+Puerto+de+la+Cruz" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=AluaSoul+Orotava+Valley" target="_blank">📍 Google Maps</a>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">ערב</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>סיור רגלי ב<strong>לה אורוטבה (La Orotava)</strong> – <em>Viernes Santo</em>, יום שישי הקדוש.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=La+Orotava+Tenerife" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=La+Orotava,Tenerife" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">🕯️</span>
+                <span>תהלוכות דתיות מרהיבות ו<strong>שטיחי פרחים ורמל וולקני</strong> מסורתיים על מדרכות העיר ההיסטורית.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tip">
+          <span>💡</span>
+          <span>La Orotava היא אחת הערים היפות בטנריף. בשבוע הקדוש, כל הרחוב הראשי מכוסה שטיחי אמנות מדהימים.</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 6 -->
+  <div class="day p2">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">4</div>
+          <div class="m">אפריל</div>
+        </div>
+        <h3>יערות אנאגה והעיר העתיקה</h3>
+        <div class="day-tag">שבת</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">בוקר</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>נסיעה ל<strong>פארק אנאגה (Anaga Rural Park)</strong> – נופים ירוקים דרמטיים, כפרים נסתרים ותצפיות על האוקיינוס האטלנטי.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Anaga+Rural+Park+Tenerife" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Anaga+Rural+Park,Tenerife" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">🏔️</span>
+                <span>הפארק הוא מורשת ביוספרה של אונסק"ו. מסלולי הליכה בין עצי ענן עתיקים ותצפית מ-Cruz del Carmen.</span>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">אחה"צ</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>שיטוט ב<strong>לה לגונה (La Laguna)</strong> – עיר עתיקה, אתר מורשת עולמי של אונסק"ו.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=La+Laguna+Tenerife" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=La+Laguna,Tenerife" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">🛍️</span>
+                <span>שופינג קל ברחוב Calle Herradores – בוטיקים מקומיים, קפה ואווירה מדהימה.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<div class="wave-sep">〰〰〰〰〰</div>
+
+<!-- ──────────── PHASE 3 ──────────── -->
+<section class="section">
+
+  <div class="phase-header p3">
+    <div class="phase-icon-lg">🥂</div>
+    <div class="phase-header-text">
+      <h2>שלב 3 – הפינאלה: יוקרה וניתוק</h2>
+      <div class="sub">5 – 8 באפריל | 3 לילות</div>
+    </div>
+  </div>
+
+  <div class="hotel-banner">
+    <div class="hotel-icon">🏰</div>
+    <div>
+      <strong>Hacienda del Conde – Meliá Collection</strong>
+      Buenavista del Norte, טנריף המערבית
+    </div>
+  </div>
+
+  <!-- Day 7 -->
+  <div class="day p3">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">5</div>
+          <div class="m">אפריל</div>
+        </div>
+        <h3>דרך הבריכות הטבעיות לריזורט</h3>
+        <div class="day-tag">יום א׳</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">בוקר</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>נסיעה מערבה לאורך הקו הצפוני לכיוון בואנביסטה.</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">עצירה</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>עצירה ב<strong>Garachico</strong> – עיירת תרבות יפה, לרחצה בבריכות הסלע <strong>El Caletón</strong>.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=El+Caleton+Garachico+Tenerife" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=El+Caleton,Garachico,Tenerife" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">🌊</span>
+                <span>בריכות לבה טבעיות שנוצרו מהתפרצות הר הגעש ב-1706. נפלאות לשחייה כשהים רגוע.</span>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">אחה"צ</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>צ'ק-אין ב<strong>Hacienda del Conde</strong> – התמקמות ופינוק ראשוני בבריכה מול האוקיינוס.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Hacienda+del+Conde+Melia+Buenavista" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Hacienda+del+Conde+Melia+Collection" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">♾️</span>
+                <span>בריכת אינפיניטי מול האוקיינוס האטלנטי. מושלם לשקיעה הראשונה מהריזורט.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 8 -->
+  <div class="day p3">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">6</div>
+          <div class="m">אפריל</div>
+        </div>
+        <h3>יום ריזורט מלא</h3>
+        <div class="day-tag">יום ב׳</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">◯</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>יום של <strong>"חוסר עשייה" מבוקר</strong>. בוקר מאוחר, ספא, מנוחה בבריכת האינפיניטי.</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">◯</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>אולי <strong>משחק גולף קל</strong> במגרש הגולף הסמוך (Buenavista Golf).</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Buenavista+Golf+Tenerife" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Buenavista+Golf,Tenerife" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">⛳</span>
+                <span>מגרש גולף בעיצוב Seve Ballesteros, עם נוף לאוקיינוס ולחרמש לוס גיגאנטס.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 9 -->
+  <div class="day p3">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">7</div>
+          <div class="m">אפריל</div>
+        </div>
+        <h3>השקיעה האחרונה</h3>
+        <div class="day-tag">יום ג׳</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">בוקר</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>בוקר רגוע ומפנק במלון – ארוחת בוקר, ספא, קריאה.</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">אחה"צ</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>נסיעה של 5 דקות ל<strong>Punta de Teno</strong> – המגדלור בקצה המערבי של טנריף.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Punta+de+Teno+Tenerife" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Punta+de+Teno,Tenerife" target="_blank">📍 Google Maps</a>
+              </div>
+              <div class="event-highlight">
+                <span class="icon">🏔️</span>
+                <span>המקום הכי יפה לסגור את הטיול – מצוקי <strong>לוס גיגאנטס</strong> מרשימים, קצה האי, וסנסט בלתי נשכח.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tip">
+          <span>✨</span>
+          <span>Punta de Teno היא נקודת הקצה הצפונית-מערבית של טנריף. הכביש אליה עובר דרך מנהרה ומציע נוף דרמטי. כדאי לבדוק שהדרך פתוחה (לעיתים נסגרת ברוחות חזקות).</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Day 10 -->
+  <div class="day p3">
+    <div class="day-card">
+      <div class="day-header">
+        <div class="day-num">
+          <div class="n">8</div>
+          <div class="m">אפריל</div>
+        </div>
+        <h3>טיסה הביתה</h3>
+        <div class="day-tag">יום ד׳</div>
+      </div>
+      <div class="day-body">
+        <div class="events">
+          <div class="event">
+            <div class="event-time">06:15</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>צ'ק-אאוט מ<strong>Hacienda del Conde</strong> ויציאה למסע החזרה.</p>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">07:30</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>הגעה לשדה התעופה הצפוני <strong>Tenerife Norte (TFN)</strong> והחזרת הרכב.</p>
+              <div class="nav-buttons">
+                <a class="nav-btn waze" href="https://waze.com/ul?q=Tenerife+Norte+Airport+TFN" target="_blank">🚗 Waze</a>
+                <a class="nav-btn gmap" href="https://maps.google.com/?q=Tenerife+Norte+Airport" target="_blank">📍 Google Maps</a>
+              </div>
+            </div>
+          </div>
+          <div class="event">
+            <div class="event-time">09:15</div>
+            <div class="event-dot"></div>
+            <div class="event-content">
+              <p>המראה ✈️ – עם מזוודות מלאות זכרונות.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ──────────── FLIGHT STRIP ──────────── -->
+<div class="flight-strip">
+  <div class="flight-card">
+    <div class="flight-info">
+      <div class="label">שדה הנחיתה</div>
+      <div class="val">TFS</div>
+      <div class="label">Tenerife Sur</div>
+    </div>
+    <div class="flight-leg">
+      <div class="airport">
+        <div class="code">TFS</div>
+        <div class="city">נחיתה 30.3</div>
+      </div>
+      <div class="route">
+        <div class="plane">✈</div>
+        <div class="line"></div>
+        <div class="time">10 ימים</div>
+      </div>
+      <div class="airport">
+        <div class="code">TFN</div>
+        <div class="city">המראה 8.4</div>
+      </div>
+    </div>
+    <div class="flight-info" style="border-right:none; border-left: 1px solid rgba(255,255,255,0.2); padding-left: 1.5rem; padding-right: 0;">
+      <div class="label">שדה ההמראה</div>
+      <div class="val">TFN</div>
+      <div class="label">Tenerife Norte</div>
+    </div>
+  </div>
+</div>
+
+<!-- ──────────── FOOTER ──────────── -->
+<footer>
+  <p style="font-size:1.3rem; margin-bottom:0.5rem;">🌋 🌿 🏖️ 🥂 ✈️</p>
+  <p><strong>טנריף ולה גומרה – מרץ/אפריל 2025</strong></p>
+  <p style="margin-top:0.4rem;">10 ימים · 3 שלבים · זכרונות לכל החיים</p>
+</footer>
+
+</body>
+</html>
